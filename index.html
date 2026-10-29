@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f5">
+    <meta
+      name="description"
+      content="Learn care skills and get hired with your AI care coach. Polish your resume, rehearse interviews, and practise real-world care situations."
+    >
+    <title>Westforce Career Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-content">
+          <a class="wordmark" href="#" aria-label="Westforce Canada home">
+            <span class="wordmark-mark" aria-hidden="true">W</span>
+            <span class="wordmark-name">WESTFORCE CANADA</span>
+          </a>
+          <div class="header-actions">
+            <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+              <a href="#readiness">Readiness</a>
+              <a href="#scenario">Practice</a>
+              <a href="#tools">Career tools</a>
+            </nav>
+            <a class="button button-primary header-cta" href="#readiness">Try it free</a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="container hero-content">
+            <div class="hero-copy">
+              <p class="eyebrow hero-eyebrow">AI career coaching · Care sector</p>
+              <h1 id="hero-title">Learn care skills and get hired with your AI care coach.</h1>
+              <p class="hero-description">
+                One place to polish your resume, rehearse interviews out loud, and sharpen your
+                judgement on real-world care situations.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#readiness">Start now</a>
+                <a class="button button-outline" href="#scenario">Try a scenario</a>
+              </div>
+              <p class="hero-note">100% free · No sign-up, ever</p>
+            </div>
+
+            <div class="hero-showcase" aria-label="Westforce career coaching examples">
+              <article class="showcase-card showcase-card-first">
+                <p class="showcase-label">Scenario result</p>
+                <p>Safe call — you paused, reassessed, and asked for help.</p>
+              </article>
+              <article class="showcase-card showcase-card-second">
+                <p class="showcase-label">Resume builder</p>
+                <p>Experience rewritten in clear, employer-friendly language.</p>
+              </article>
+              <article class="showcase-card showcase-card-third">
+                <p class="showcase-label">Interview coach</p>
+                <p>Good story. Add one concrete result to finish strong.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="readiness section-space" id="readiness" aria-labelledby="readiness-title">
+          <div class="container-narrow">
+            <div class="section-heading">
+              <p class="eyebrow">3 quick questions</p>
+              <h2 id="readiness-title">How ready are you to get hired?</h2>
+            </div>
+            <div class="quiz-card" aria-live="polite">
+              <div id="quiz-step">
+                <p class="quiz-progress" id="quiz-progress">Question 1 of 3</p>
+                <h3 class="quiz-question" id="quiz-question">Where are you in your career right now?</h3>
+                <div class="quiz-answers" id="quiz-answers"></div>
+              </div>
+              <div class="quiz-result" id="quiz-result" hidden>
+                <p class="result-label">Your level</p>
+                <h3 class="result-title" id="result-title"></h3>
+                <p class="result-copy" id="result-copy"></p>
+                <button class="button button-primary" id="retake-quiz" type="button">Retake</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="scenario section-space" id="scenario" aria-labelledby="scenario-title">
+          <div class="container-narrow">
+            <p class="eyebrow">Try it now</p>
+            <h2 id="scenario-title">Practise a real care decision</h2>
+            <div class="scenario-card">
+              <p class="scenario-question">
+                You're helping a client move from their bed to a chair. Halfway through, they tell
+                you they feel lightheaded and start to sag. What do you do first?
+              </p>
+              <div class="scenario-answers" role="group" aria-label="Choose what you would do first">
+                <button class="scenario-answer" type="button" data-correct="false">
+                  <span class="answer-letter" aria-hidden="true">A</span>
+                  <span>Push through and finish the move quickly.</span>
+                </button>
+                <button class="scenario-answer" type="button" data-correct="true">
+                  <span class="answer-letter" aria-hidden="true">B</span>
+                  <span>Lower them safely back to the bed, stay close, and call for help.</span>
+                </button>
+                <button class="scenario-answer" type="button" data-correct="false">
+                  <span class="answer-letter" aria-hidden="true">C</span>
+                  <span>Step away and let them find their balance.</span>
+                </button>
+                <button class="scenario-answer" type="button" data-correct="false">
+                  <span class="answer-letter" aria-hidden="true">D</span>
+                  <span>Leave to go find a supervisor.</span>
+                </button>
+              </div>
+              <p class="scenario-feedback" id="scenario-feedback" role="status" hidden>
+                <strong id="scenario-feedback-title"></strong>
+                <span id="scenario-feedback-copy"></span>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="tools section-space" id="tools" aria-labelledby="tools-title">
+          <div class="container">
+            <h2 id="tools-title">Every tool you need, in one place</h2>
+            <div class="tools-grid">
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">01</span>
+                <h3>Scenario Practice</h3>
+                <p>Work through everyday care situations and learn the reasoning behind each safe choice.</p>
+              </article>
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">02</span>
+                <h3>Resume Builder</h3>
+                <p>Turn your experience — local or international — into a clear, employer-ready resume.</p>
+              </article>
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">03</span>
+                <h3>Cover Letters</h3>
+                <p>Generate tailored letters for each posting in minutes.</p>
+              </article>
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">04</span>
+                <h3>Interview Coach</h3>
+                <p>Answer common questions and get instant, specific feedback.</p>
+              </article>
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">05</span>
+                <h3>Workplace English</h3>
+                <p>Build confidence with the phrases used on shift and in handovers.</p>
+              </article>
+              <article class="tool-card">
+                <span class="tool-number" aria-hidden="true">06</span>
+                <h3>Job Tracker</h3>
+                <p>Keep every application, follow-up, and interview in one view.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="audiences section-space" aria-label="Explore tools by your career stage">
+          <div class="container audience-grid">
+            <article class="audience-card audience-card-dark">
+              <h3>I'm still training</h3>
+              <p>Review key concepts, rehearse scenarios, and prepare for assessments.</p>
+              <a href="#readiness">Explore tools <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="audience-card audience-card-brand">
+              <h3>I'm ready to work</h3>
+              <p>Resume, cover letters, interview prep — everything to get hired.</p>
+              <a href="#readiness">Explore tools <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>© 2026 Westforce Canada. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
